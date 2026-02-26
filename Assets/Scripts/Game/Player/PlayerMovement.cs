@@ -7,28 +7,27 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Camera cam;
 
-    Vector2 movement;
+    public Vector2 playerMovement;
     Vector2 mousePos;
     
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        playerMovement.x = Input.GetAxisRaw("Horizontal");
+        playerMovement.y = Input.GetAxisRaw("Vertical");
 
-        movement.Normalize(); //syncs movements x + y
+        playerMovement.Normalize(); //syncs movement x + y
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
-
     
-
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + playerMovement * speed * Time.fixedDeltaTime);
 
         Vector2 lookDir = mousePos - rb.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f; //Z position look, from Radians to Degrees
         rb.rotation = angle;
     }   
 } 
+
