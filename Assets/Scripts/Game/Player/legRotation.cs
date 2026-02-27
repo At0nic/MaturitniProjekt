@@ -16,12 +16,10 @@ public class legRotation : MonoBehaviour
         Vector2 direction = plMovement.playerMovement;
         
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
-        
         Quaternion targetRoation = Quaternion.Euler(0, 0, angle);
-        
         transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRoation, rotationSpeed * Time.deltaTime);
         
-        if (plMovement.playerMovement != Vector2.zero)
+        if (direction != Vector2.zero)
         {
             animator.SetBool("isRunning", true);
         }

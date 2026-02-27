@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 37897754}
   - component: {fileID: 37897756}
   - component: {fileID: 37897755}
+  - component: {fileID: 37897757}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -194,6 +195,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37897753}
   m_CullTransparentMesh: 1
+--- !u!114 &37897757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37897753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7368a1c2abf8d1334a296209977befc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  slot: {fileID: 0}
 --- !u!1 &257703931
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +925,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.08442846, y: -0.026383877}
+  m_Offset: {x: 0.09502226, y: -0.06346202}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -921,7 +935,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.6267629, y: 0.982996}
+  m_Size: {x: 1.4572626, y: 0.54865193}
   m_EdgeRadius: 0
 --- !u!114 &305810918
 MonoBehaviour:
@@ -949,6 +963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 2116286868}
   bulletPrefab: {fileID: 2505239129875577415, guid: 251cb201a426bf04285648e88c09ace2, type: 3}
+  GunType: pistol
   bulletForce: 20
 --- !u!50 &305810920
 Rigidbody2D:
@@ -1719,7 +1734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1689202310}
-  - component: {fileID: 1689202309}
+  - component: {fileID: 1689202311}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -1727,18 +1742,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1689202309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689202308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ff5d74df2612ec4fa3ab439338cee93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1689202310
 Transform:
   m_ObjectHideFlags: 0
@@ -1754,6 +1757,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689202311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689202308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09314ec9e409ced9fac6060859260b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  inventoryPanel: {fileID: 0}
+  slotPrefab: {fileID: 0}
+  itemPrefabs: []
 --- !u!1 &2058714328
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,7 +2717,7 @@ Transform:
   m_GameObject: {fileID: 2116286867}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.54, y: -0.14, z: 0}
+  m_LocalPosition: {x: -0.021, y: 0.554, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
