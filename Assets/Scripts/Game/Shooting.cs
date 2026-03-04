@@ -5,6 +5,7 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public string GunType;      // AR/SMG, Pistol, Shotgun
+    public bool isFiring;
     
     //Shooting Intervals
     private float timeOfLastShot;
@@ -22,6 +23,7 @@ public class Shooting : MonoBehaviour
             {
                 ShootShotgun();
                 timeOfLastShot=Time.time;
+                isFiring = false;
             }
         }
         else if (GunType == "pistol")
@@ -31,6 +33,7 @@ public class Shooting : MonoBehaviour
             {
                 Shoot();
                 timeOfLastShot=Time.time;
+                isFiring = false;
             }
         }
         else if (GunType == "ar")
@@ -40,6 +43,7 @@ public class Shooting : MonoBehaviour
             {
                 Shoot();
                 timeOfLastShot=Time.time;
+                isFiring = false;
             }
         }
         
@@ -47,6 +51,7 @@ public class Shooting : MonoBehaviour
     
     void Shoot()
     {
+        isFiring = true;
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
         
@@ -54,6 +59,7 @@ public class Shooting : MonoBehaviour
     }
     void ShootShotgun()
     {
+        isFiring = true;
         int pelletCount = 3;                // Number of pellets
         float totalSpreadAngle = 7.5f;      // Total spread angle
         
@@ -73,5 +79,6 @@ public class Shooting : MonoBehaviour
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.linearVelocity = bullet.transform.up * bulletForce;
         }
+        
     }
 }
