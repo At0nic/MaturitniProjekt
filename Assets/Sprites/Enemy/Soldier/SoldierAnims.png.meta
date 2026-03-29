@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: 8fc8832461399e99a852a0c9b466d1f2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -180209973186496765
+    second: SoldierAnims_0
+  - first:
+      213: -5605710506141665354
+    second: SoldierAnims_1
+  - first:
+      213: 1533585812297546462
+    second: SoldierAnims_2
+  - first:
+      213: 180640005315018817
+    second: SoldierAnims_3
+  - first:
+      213: 4192932982018572862
+    second: SoldierAnims_4
+  - first:
+      213: 7237063824826246486
+    second: SoldierAnims_5
+  - first:
+      213: -7997894708984164552
+    second: SoldierAnims_6
+  - first:
+      213: 2893231218619234500
+    second: SoldierAnims_7
+  - first:
+      213: 3510818011360203775
+    second: SoldierAnims_8
+  - first:
+      213: -2014070014559619687
+    second: SoldierAnims_9
+  - first:
+      213: -334041168062022243
+    second: SoldierAnims_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SoldierAnims_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 18
+        width: 22
+        height: 13
+      alignment: 9
+      pivot: {x: 0.44, y: 0.47}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3077c33fbf3cf7df0800000000000000
+      internalID: -180209973186496765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoldierAnims_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 15
+        width: 22
+        height: 16
+      alignment: 9
+      pivot: {x: 0.47, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b730c7bef38432b0800000000000000
+      internalID: -5605710506141665354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoldierAnims_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 10
+        width: 22
+        height: 21
+      alignment: 9
+      pivot: {x: 0.47, y: 0.66}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edaf296cb24684510800000000000000
+      internalID: 1533585812297546462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoldierAnims_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 7
+        width: 21
+        height: 24
+      alignment: 9
+      pivot: {x: 0.47, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140c605b023c18200800000000000000
+      internalID: 180640005315018817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoldierAnims_4
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 7
+        width: 21
+        height: 24
+      alignment: 9
+      pivot: {x: 0.47, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e328c30055a403a30800000000000000
+      internalID: 4192932982018572862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoldierAnims_5
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 12
+        width: 22
+        height: 19
+      alignment: 9
+      pivot: {x: 0.47, y: 0.62}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655299f74373f6460800000000000000
+      internalID: 7237063824826246486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoldierAnims_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 13
+        width: 21
+        height: 18
+      alignment: 9
+      pivot: {x: 0.47, y: 0.62}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fc5080325c10190800000000000000
+      internalID: -7997894708984164552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoldierAnims_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 13
+        width: 21
+        height: 18
+      alignment: 9
+      pivot: {x: 0.47, y: 0.62}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c8beded672d62820800000000000000
+      internalID: 2893231218619234500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoldierAnims_8
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 15
+        width: 22
+        height: 16
+      alignment: 9
+      pivot: {x: 0.45, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff31b26516ee8b030800000000000000
+      internalID: 3510818011360203775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoldierAnims_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 10
+        width: 20
+        height: 19
+      alignment: 9
+      pivot: {x: 0.38, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99578652ef59c04e0800000000000000
+      internalID: -2014070014559619687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SoldierAnims_10
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 6
+        width: 19
+        height: 23
+      alignment: 9
+      pivot: {x: 0.43, y: 0.77}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d7e45d35f3d5bf0800000000000000
+      internalID: -334041168062022243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 030f6d3ebfffac197af1be899408abf2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SoldierAnims_0: -180209973186496765
+      SoldierAnims_1: -5605710506141665354
+      SoldierAnims_10: -334041168062022243
+      SoldierAnims_2: 1533585812297546462
+      SoldierAnims_3: 180640005315018817
+      SoldierAnims_4: 4192932982018572862
+      SoldierAnims_5: 7237063824826246486
+      SoldierAnims_6: -7997894708984164552
+      SoldierAnims_7: 2893231218619234500
+      SoldierAnims_8: 3510818011360203775
+      SoldierAnims_9: -2014070014559619687
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

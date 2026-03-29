@@ -13,8 +13,8 @@ TagManager:
   - UI
   - Player
   - Bullet
-  - 
-  - 
+  - Walls
+  - Items
   - 
   - 
   - 
@@ -55,6 +55,9 @@ TagManager:
     locked: 0
   - name: Bullets
     uniqueID: 1132617121
+    locked: 0
+  - name: UI
+    uniqueID: 3381047179
     locked: 0
   m_RenderingLayers:
   - Default

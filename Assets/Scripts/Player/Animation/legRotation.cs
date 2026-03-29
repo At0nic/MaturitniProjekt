@@ -19,6 +19,7 @@ public class legRotation : MonoBehaviour
         Quaternion targetRoation = Quaternion.Euler(0, 0, angle);
         transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRoation, rotationSpeed * Time.deltaTime);
         
+        //Leg animation
         if (direction != Vector2.zero)
         {
             animator.SetBool("isRunning", true);
