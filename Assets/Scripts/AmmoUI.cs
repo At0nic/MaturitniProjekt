@@ -10,13 +10,13 @@ public class AmmoUI : MonoBehaviour
     void Update()
     {
         ammoText.text = shooting.ammoCount.ToString();
-        if (shooting.currentItem != "")
+        if (shooting.currentItem == "" || shooting.currentItem == "melee")
         {
-            ammoText.enabled = true;
+            ammoText.enabled = false;
         }
         else
         {
-                ammoText.enabled = false;
+                ammoText.enabled = true;
         }
        
     }

@@ -122,8 +122,11 @@ public class Shooting : MonoBehaviour
         isFiring = true;
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-        
         bulletRb.linearVelocity = firePoint.up * bulletForce;
+        
+        // Set owner tag so bullet knows who fired it
+        Bullet bulletScript = bullet.GetComponent<Bullet>();
+        if (bulletScript != null) bulletScript.ownerTag = gameObject.tag;
     }
     void ShootShotgun()
     {
@@ -144,6 +147,10 @@ public class Shooting : MonoBehaviour
 
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.linearVelocity = bullet.transform.up * bulletForce;
+            
+            // Set owner tag so bullet knows who fired it
+            Bullet bulletScript = bullet.GetComponent<Bullet>();
+            if (bulletScript != null) bulletScript.ownerTag = gameObject.tag;
         }
     }
 }

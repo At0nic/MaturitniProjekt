@@ -60,6 +60,7 @@ public class EnemyAI : MonoBehaviour
     void HandleShooting()
     {
         if (target == null || !playerDetected) return;
+        if (Health.playerIsDead) return; //shooting stopped if Player dead
 
         float distanceToPlayer = Vector2.Distance(rb.position, target.position);
         fireRateTimer += Time.deltaTime;
@@ -94,6 +95,10 @@ public class EnemyAI : MonoBehaviour
         Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
         bulletRb.linearVelocity = firePoint.up * bulletForce;
         isFiring = false;
+        
+        // Set owner tag so bullet knows who fired it
+        Bullet bulletScript = bullet.GetComponent<Bullet>();
+        if (bulletScript != null) bulletScript.ownerTag = gameObject.tag;
     }
 
     void ShootShotgun()
@@ -112,6 +117,10 @@ public class EnemyAI : MonoBehaviour
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, spreadRotation);
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
             bulletRb.linearVelocity = bullet.transform.up * bulletForce;
+            
+            // Set owner tag so bullet knows who fired it
+            Bullet bulletScript = bullet.GetComponent<Bullet>();
+            if (bulletScript != null) bulletScript.ownerTag = gameObject.tag;
         }
         isFiring = false;
     }
@@ -202,6 +211,7 @@ public class EnemyAI : MonoBehaviour
 
     void UpdatePath()
     {
+        if (Health.playerIsDead) return;
         if (!seeker.IsDone()) return;
 
         if (playerDetected)
