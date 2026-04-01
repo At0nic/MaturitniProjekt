@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -19,6 +20,11 @@ public class PlayerMovement : MonoBehaviour
         playerMovement.Normalize(); //syncs movement x + y
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
     
     private void FixedUpdate()

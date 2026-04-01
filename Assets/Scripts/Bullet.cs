@@ -19,8 +19,8 @@ public class Bullet : MonoBehaviour
         }
 
         // Spawn hit effect and destroy bullet
-        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 2f);
+       /* GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+        Destroy(effect, 2f);*/
         Destroy(gameObject);
     }
 }
