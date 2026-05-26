@@ -47,13 +47,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6be5c151c4e6c48ad236cb894f6825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemBehaviour
-  itemType: pistol
+  itemType: 2
   itemSubType: 
   ammoCount: 8
   timeFromLastPickup: 0
   isFlying: 0
   onGround: 1
-  playerPickedUp: 0
 --- !u!212 &387931275567932353
 SpriteRenderer:
   serializedVersion: 2
@@ -100,7 +99,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1581936463
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1435297887548153375, guid: e098cf567dce6a34183948d9be7446b5, type: 3}
